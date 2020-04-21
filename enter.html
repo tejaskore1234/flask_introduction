@@ -1,0 +1,24 @@
+<!-- enter.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter</title>
+</head>
+<body>
+    <h1> Enter details </h1>
+
+    <form method='post'>
+
+            <b>Website</b> <input type="text" name="website"><br>
+            <b>Username</b> <input type="text" name="username"><br>
+	    <b>Password</b> <input type="text" name="password"><br>
+	    <b>EmailId</b> <input type="text" name="emailid"><br>
+
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset"><br>
+    </form>
+
+    <p>Go to <a href="{{url_for('index')}}">Home</a></p>
+</body>
+</html>

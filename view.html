@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> View All </title>
+  </head>
+  <body>
+	<h1>List Of Username/Passwords</h1>
+	<!--<p> {{rec_list}} </p>-->
+	<p>
+	    <table border="1">
+    		<thead>
+    			<tr>
+        		    <th>Id</th>
+        	            <th>Website</th>
+			    <th>Username</th>
+			    <th>Password</th>
+			    <th>EmailId</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+        		{% for row in rec_list %} 
+            			<tr>
+                		    <td>{{row[0]}}</td>
+                		    <td>{{row[1]}}</td>
+				    <td>{{row[2]}}</td>
+				    <td>{{row[3]}}</td>
+				    <td>{{row[4]}}</td>
+            			</tr>
+        		{% endfor %}
+    		</tbody>
+	    </table>
+        </p>
+	<p><a href="{{url_for('index')}}">Home</a></p>
+  </body>
+</html>
